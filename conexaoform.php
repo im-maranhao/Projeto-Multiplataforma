@@ -5,6 +5,8 @@ define('SENHA','Irtvm@123');
 define('DB','u244070043_irtvm');
 
 $conexao = mysqli_connect(HOST,USUARIO, SENHA, DB);
+
 if ($conexao->connect_error) {
     die("Connection failed: " . $conexao->connect_error);
+
 }

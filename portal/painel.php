@@ -16,18 +16,18 @@ include('dashboard.php')
     <link rel="shortcut icon" href="../assets/imagem/favicon.ico" type="image/x-icon">
 
 </head>
-<body > <!--CORPO DO SITE --> 
+<body >
 
-    <header> <!--CABEÇALHO DO SITE --> 
+    <header> 
 
     </header>
-    <main> <!--CONTEÚDO DO SITE --> 
+    <main> 
 
 <center>
 </center>
     </main>
 
-    <footer> <!--RODAPÉ DO SITE --> 
+    <footer>
 
     </footer>   
 </body>
