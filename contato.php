@@ -69,7 +69,7 @@
     </main>
 
     <br>
-    <footer> <!-- Rodapé--->
+    <footer>
         
         <p>IRTVM Cursos Ltda CNPJ: 29.480.532/0001-10 <br>
         Rua São Joaquim da Barra, 550 Quadra F-10 <br>Parque Industrial - CEP: 02022-136 – São Paulo – SP <br>
