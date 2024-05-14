@@ -34,7 +34,7 @@
     include ('conexao.php');
     session_start();
     ?>
-       <!--  -->
+
        <?php
         if (empty($_POST['nome']) || empty($_POST['sobrenome']) 
         ||  empty($_POST['email']) ||  empty($_POST['tel']) ||
@@ -74,6 +74,7 @@
         <p>IRTVM Cursos Ltda CNPJ: 29.480.532/0001-10 <br>
         Rua São Joaquim da Barra, 550 Quadra F-10 <br>Parque Industrial - CEP: 02022-136 – São Paulo – SP <br>
         Telefone: (11) 3948-5013 - E-mail: sac@irtvm.com.br</p>
+        
     </footer> <br>
 
     <h3> Todos os direitos reservados - Desenvolvido por Thais Napolitano</h3> <br>
