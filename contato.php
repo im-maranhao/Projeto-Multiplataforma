@@ -1,5 +1,4 @@
 <html lang="pt-BR">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -29,6 +28,7 @@
                 </ul>
             </menu>
     <main>
+
     <article id="formulario">
     <?php
     include ('conexao.php');
@@ -66,9 +66,11 @@
        $conexao->close();
         ?>
     </article>
+
     </main>
 
     <br>
+
     <footer>
         
         <p>IRTVM Cursos Ltda CNPJ: 29.480.532/0001-10 <br>
@@ -78,6 +80,7 @@
     </footer> <br>
 
     <h3> Todos os direitos reservados - Desenvolvido por Thais Napolitano</h3> <br>
+
     <script>
         function mudouTamanho(){
             if(window.innerWidth >= 768){
@@ -95,5 +98,6 @@
             }
         }
     </script>
+    
 </body>
 </html>
