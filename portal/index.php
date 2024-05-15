@@ -24,58 +24,66 @@
     <br>
 <main>
 <center>
-    <br/>
-                     <?php
-session_start();
-?>
-                    <?php
-if (isset($_SESSION['nao_autenticado'])):
-?>
-                    <div class="alert alert-danger">
-                      <p>ERRO: Usuário ou senha inválidos.</p>
-                    </div>
+<br/>
+    <?php
+        session_start();
+    ?>
+    <?php
+        if (isset($_SESSION['nao_autenticado'])):
+    ?>
+    <div class="alert alert-danger">
+        <p>ERRO: Usuário ou senha inválidos.</p>
+    </div>
                     
-                    <?php
-endif;
-unset($_SESSION['nao_autenticado']);
-?>
-                    <div class="container bg-white shadow rounded p-5" style="width: 25rem;" color="blue">
-                        <form action="login.php" method="POST">
-                            <br/>
-                        <h3 class="title has-text-black">LOGIN</h3>
-                        <center>       
-<br/> 
-<div class="form-check form-check-inline">
-  <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-  <label class="form-check-label" for="inlineCheckbox1">Professor</label>
-</div>
-<div class="form-check form-check-inline">
-  <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-  <label class="form-check-label" for="inlineCheckbox2">Aluno</label>
-</div>
-<div class="form-check form-check-inline">
-  <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-  <label class="form-check-label" for="inlineCheckbox2">Administrador</label>
-</div>
+    <?php
+        endif;
+        unset($_SESSION['nao_autenticado']);
+    ?>
+    
+    <div class="container bg-white shadow rounded p-5" style="width: 25rem;" color="blue">
+        <form action="login.php" method="POST">
+            <br/>
+        <h3 class="title has-text-black">LOGIN</h3>
+<center>     
+
+    <br/> 
+
+    <div class="form-check form-check-inline">
+    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+    <label class="form-check-label" for="inlineCheckbox1">Professor</label>
+    </div>
+
+    <div class="form-check form-check-inline">
+    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+    <label class="form-check-label" for="inlineCheckbox2">Aluno</label>
+    </div>
+
+    <div class="form-check form-check-inline">
+    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+    <label class="form-check-label" for="inlineCheckbox2">Administrador</label>
+    </div>
+
 <br/>
 <br/>
-                            <div class="form-floating mb-3">
-                                <div class="control">                  
-                                    <input name="usuario" name="text" class="input is-large"     placeholder="Usuário" autofocus="">
-                                </div>
-                            </div>
-                            <div class="form-floating mb-4">
-                                <div class="control">
-                                    <input name="senha" class="input is-large" type="password" placeholder="Senha">
-                                </div>
-                            </div>
-                            <button  href="./pages/dashboard/dashboard.php" class="btn btn-primary btn-sm">Entrar</button>
-                        </form>
-                        <br/>
-                        <br/>
-                        <a href="logout.php">Esqueceu a Senha?</a>
-                    </div>
-                    <br/>
+    <div class="form-floating mb-3">
+        <div class="control">                  
+            <input name="usuario" name="text" class="input is-large"     placeholder="Usuário" autofocus="">
+        </div>
+    </div>
+    <div class="form-floating mb-4">
+        <div class="control">
+            <input name="senha" class="input is-large" type="password" placeholder="Senha">
+        </div>
+    </div>
+        <button  href="./pages/dashboard/dashboard.php" class="btn btn-primary btn-sm">Entrar</button>
+    </form>
+
+    <br/>
+    <br/>
+         <a href="logout.php">Esqueceu a Senha?</a>
+    </div>
+
+<br/>
 </center>
 
 </main>
