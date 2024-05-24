@@ -65,8 +65,8 @@
        // }
        $conexao->close();
         ?>
-    </article>
 
+    </article>
     </main>
 
     <br>
