@@ -1,4 +1,5 @@
 <?php
+
 define('DB_SERVER', '127.1.1' );
 define('DB_USERNAME', 'u244070043_irtvm' );
 define('DB_PASSWORD', 'T123456m' );
