@@ -6,8 +6,11 @@ owl.owlCarousel({
     center:true,
     autoplay:true,
     autoplayTimeout:700,
+
     // autoplayHoverPause:true
+
 });
+
 $('.play').on('click',function(){
     owl.trigger('play.owl.autoplay',[1000])
 })
