@@ -9,7 +9,6 @@ $consulta = "SELECT * FROM clientes ";
 $resultado = mysqli_query($conn, $consulta);
 ?>
 
-
 <?php
 if (isset($_SESSION['error'])) {
     echo $_SESSION['error'];
@@ -19,7 +18,6 @@ if (isset($_SESSION['success'])) {
     echo $_SESSION['success'];
     unset($_SESSION['success']);
 }
-
 
 $busca = $_POST['palavra'];
 $busca = "SELECT * FROM clientes WHERE nome LIKE '%$busca%' OR cpf LIKE '%$busca%' OR nascimento LIKE '%$busca%' OR rg LIKE '%$busca%'";
@@ -51,7 +49,6 @@ $resultado = mysqli_query($conn, $busca);
         $alterado_por = $linha['alterado_por'];
         $cpf = $linha['cpf'];
         $rg = $linha['rg'];
-
 
         // CONVERTENDO DATA/HORA PARA PADRAO PORTUGUES-BR
         $ultima_alteracao = $linha['ultima_alteracao'];
